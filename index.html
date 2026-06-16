@@ -119,6 +119,8 @@
     font-size:clamp(1.45rem, 3.6vw, 1.95rem); letter-spacing:-.01em; margin:0; line-height:1.12;
   }
   .sec-org{ font-family:var(--mono); font-size:12.5px; color:var(--muted); letter-spacing:.02em; margin-left:auto; padding-top:8px; }
+  .sec-org a{ color:var(--muted); border-bottom:1px solid var(--line); transition:color .18s ease, border-color .18s ease; }
+  .sec-org a:hover{ color:var(--amber); border-bottom-color:var(--amber); }
   .lead{ max-width:64ch; color:var(--text); margin:0 0 8px; }
   .lead.sm{ font-size:1rem; }
   .section p{ max-width:64ch; }
@@ -169,8 +171,7 @@
   /* book card */
   .book{ display:grid; grid-template-columns:64px 1fr; gap:18px; align-items:center; padding:20px; border:1px solid var(--line); border-radius:10px; background:var(--ink-raised); transition:border-color .18s ease, transform .18s ease; }
   a.book:hover{ border-color:var(--amber); transform:translateY(-2px); }
-  .book-cover{ width:64px; height:84px; border-radius:5px; background:linear-gradient(160deg, var(--amber), var(--amber-dim)); display:flex; align-items:center; justify-content:center; }
-  .book-cover svg{ width:26px; height:26px; stroke:var(--ink); fill:none; stroke-width:1.6; }
+  .book-cover{ width:64px; height:90px; border-radius:5px; object-fit:cover; box-shadow:0 3px 12px rgba(0,0,0,.4); background:var(--ink); }
   .book .label{ font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--amber); margin-bottom:6px; display:block; }
   .book h3{ font-family:var(--display); font-weight:600; font-size:1.05rem; margin:0 0 4px; line-height:1.25; }
   .book p{ margin:0; font-size:.9rem; color:var(--muted); }
@@ -280,12 +281,12 @@
       <div class="sec-head">
         <span class="sec-index">01</span>
         <h2 class="sec-title">Security Awareness &amp; Training</h2>
-        <span class="sec-org">Hailbytes</span>
+        <span class="sec-org"><a href="https://hailbytes.com/" target="_blank" rel="noopener">Hailbytes</a></span>
       </div>
       <div class="twocol">
         <div>
-          <p class="lead">At Hailbytes I ran phishing-simulation and security-awareness programmes, built the cloud infrastructure behind them, and turned the results into training people could actually use.</p>
-          <p class="lead sm" style="color:var(--muted);">A lot of that work became public teaching. My cloud-security and phishing guides have passed 500,000 blog reads and 100,000+ video views. Here is a GoPhish campaign built from scratch, plus the AWS configuration walkthrough behind it.</p>
+          <p class="lead">At Hailbytes I ran phishing-simulation and security-awareness programmes, helped build the cloud infrastructure behind them, and turned the results into training people could actually use.</p>
+          <p class="lead sm" style="color:var(--muted);">A lot of that work became public teaching. Our cloud-security and phishing guides have passed 500,000 blog reads and 100,000+ video views.</p>
         </div>
         <div class="stack">
           <a class="media" href="https://youtu.be/r-Q_rIlv6yo" target="_blank" rel="noopener">
@@ -315,7 +316,7 @@
         <h2 class="sec-title">Building a Safer Digital Society</h2>
         <span class="sec-org">Ocynt · Co-founder</span>
       </div>
-      <p class="lead">I co-founded <a class="inline-link" href="https://ocynt.com/" target="_blank" rel="noopener">Ocynt</a> to make the digital space safer for everyday people and small businesses. We equip SMEs with the resources to protect their digital assets, and we use open-source intelligence to locate missing persons and track down scammers. This is the work I am known for.</p>
+      <p class="lead">I co-founded <a class="inline-link" href="https://ocynt.com/" target="_blank" rel="noopener">Ocynt</a> to make the digital space safer for everyday people and small businesses. We equip SMEs with the resources to protect their digital assets, and we use open-source intelligence to locate missing persons and track down scammers.</p>
 
       <div class="grid">
         <div class="card">
@@ -348,7 +349,7 @@
           </div>
         </a>
         <a class="book" href="https://drive.google.com/file/d/1UBn2BacV2xU4Ie3l3Oy5b0ZKQ-TgiUD4/view?usp=sharing" target="_blank" rel="noopener">
-          <span class="book-cover"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 3v16"/></svg></span>
+          <img class="book-cover" src="https://lh3.googleusercontent.com/d/1eHyLuuAs9pjv23N657KwmaoaWdsSxEXd=w300" alt="Cybersecurity for SMEs book cover" loading="lazy">
           <span>
             <span class="label">Book</span>
             <h3>Cybersecurity for Small and Medium Enterprises</h3>
@@ -356,7 +357,7 @@
           </span>
         </a>
       </div>
-      <p class="note">We have also run hands-on cybersecurity webinars for SMEs across Abuja.</p>
+      <p class="note">We created the book to help SMEs protect their businesses, and ran training for several SMEs across Abuja.</p>
     </div>
   </section>
 
@@ -420,7 +421,7 @@
       <div class="sec-head">
         <span class="sec-index">04</span>
         <h2 class="sec-title">Engineering &amp; Web Security</h2>
-        <span class="sec-org">Ironwave Technologies</span>
+        <span class="sec-org"><a href="https://ironwavetech.com/" target="_blank" rel="noopener">Ironwave Technologies</a></span>
       </div>
       <p class="lead">As a security engineer and developer I harden live web platforms and the data behind them. The work covers WAF rule design and tuning, bot mitigation, system hardening, and security testing, keeping protections tight enough to stop attackers without breaking legitimate traffic. Recent work includes building and securing a scalable platform and database handling roughly 2,500 RF products for clients in the U.S. defense industry, with controlled access and data integrity treated as hard requirements.</p>
       <div class="chips">
